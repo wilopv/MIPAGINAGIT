@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaminaEstilo - información</title>
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+    <!-- en index.html, pag1.html y el pag2.html
+    el contenido dentro del header (incluyendo el nav), footer y 
+    el aside o contenedor-principal-derecho, y el esquema
+    del main es el mismo. Pero cambia el 
+    contenido dentro del contenedor-principal-izquierdo.-->
+
+    <header class="cabecera">
+        <div class="imglogo-cabecera">
+            <img src="logo.png" alt="logo-cabecera" width="100" height="100">
+        </div>
+        <div class="textologo-cabecera">
+            <h1>CaminaEstilo</h1>
+        </div>
+        
+        <nav class="barra-menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="pag1.html">GUIA DE TALLAS</a></li>
+                <li><a href="pag2.html">FORMULARIO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- el formulario se crea con form y dentro utiliza 4 elementos de form
+    que son label, input, textarea y button-->
+    <main class="contenedor-principal">
+        <div class="contenedor-principal-izq">
+            <div id="titulo-formulario" style="text-align:center; margin-bottom: 5%;">
+                <b style="font-size:200%;">FORMULARIO DE CONTACTO</b>
+            </div>
+            <form id="formulario-contacto">
+                <label for="entradanombre">Nombre y apellidos:</label><br>
+                <input type="text" id="entradanombre" name="entradanombre"><br>
+                
+                <label for="entradacorreo">Correo electrónico de contacto:</label><br>
+                <input type="text" id="entradacorreo" name="entradacorreo"><br>
+
+                <label for="entradatelefono">Telefono de contacto:</label><br>
+                <input type="text" id="entradatelefono" name="entradatelefono"><br>
+
+                <label for="entradacomentario">Comentario:</label><br>
+                <textarea type="text" id="entradacomentario" name="entradacomentario"></textarea><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+        <aside class="contenedor-principal-derecho">
+            <b>CATEGORÍAS</b>
+            <ul id="lista-menu-lateral">
+                <li><a href="index.html#categoria-zapatos-hombre">ZAPATOS DE HOMBRE</a></li>
+                <li><a href="index.html#categoria-zapatos-mujer">ZAPATOS DE MUJER</a></li>
+                <li><a href="index.html#categoria-zapatos-niño">ZAPATOS DE NIÑOS</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <footer class="pie-pagina">
+        <p>Wilbert López Veras, 1 DAM - Lenguaje de marcas y etiquetas. 29-10-2023</p>
+    </footer>
+    
+</body>
+</html>

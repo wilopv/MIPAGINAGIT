@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaminaEstilo</title>
+    <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+    <!-- en index.html, pag1.html y el pag2.html
+    el contenido dentro del header (incluyendo el nav), footer y 
+    el aside o contenedor-principal-derecho, y el esquema
+    del main es el mismo. Pero cambia el 
+    contenido dentro del contenedor-principal-izquierdo.-->
+
+    <!-- aquí irá todo el contenido de la cabecera de la pagina-->
+    <!-- en la cabecera hay un contenedor para la imagen del logo a la izquierda
+    un contenedor para el texto del nombre de la pagina y 
+    un contenedor para la barra de navegacion nav-->
+    <header class="cabecera">
+        <div class="imglogo-cabecera">
+            <img src="logo.png" alt="logo-cabecera" width="100" height="100">
+        </div>
+        <div class="textologo-cabecera">
+            <h1>CaminaEstilo</h1>
+        </div>
+        <!-- en el nav se enlazan las 3 paginas que pide el trabajo. -->
+        <nav class="barra-menu">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="pag1.html">GUIA DE TALLAS</a></li>
+                <li><a href="pag2.html">FORMULARIO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- en el main irá el contenedor donde irá el contenido principal de
+    la pagina, y también irá el aside, en el cual están enlaces 
+    a ciertas partes de la pagina-->
+    <!-- el contenedor principal se le aplica estilo con una clase, al igual
+    que los contenedores izquierdo y el aside.-->
+    <main class="contenedor-principal">
+        <!-- en este contenedor se incluirán los articulos con <article>
+        que será cada zapato.-->
+        <div class="contenedor-principal-izq">
+            <!-- cada cambio de categoría tiene un h1 que está dentro
+            de un contenedor div, y se le da estilo con la clase correspondiente. -->
+            <div id="categoria-zapatos-hombre" class="titulo-categoria">
+                <h1>Zapatos de hombre</h1>
+            </div>
+            
+            <!-- todos los articulos tienen la misma clase articulo-zapato-->
+            <!-- cada articulo se divide en un contenedor de nombre, 
+            contenedor de la foto y contenedor del precio (informacion)-->
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de hombre 1</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/hombre1.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 400 €</h2>
+                </div>
+            </article>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de hombre 2</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/hombre2.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 200 €</h2>
+                </div>
+            </article>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de hombre 3</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/hombre3.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 350 €</h2>
+                </div>
+            </article>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de hombre 4</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/hombre4.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 380 €</h2>
+                </div>
+            </article>
+
+            <div id="categoria-zapatos-mujer" class="titulo-categoria">
+                <h1>Zapatos de mujer</h1>
+            </div>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de mujer 1</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/mujer1.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 400 €</h2>
+                </div>
+            </article>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de mujer 2</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/mujer2.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 200 €</h2>
+                </div>
+            </article>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de mujer 3</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/mujer3.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 350 €</h2>
+                </div>
+            </article>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de mujer 4</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/mujer4.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 380 €</h2>
+                </div>
+            </article>
+
+
+            <div id="categoria-zapatos-niño" class="titulo-categoria">
+                <h1>Zapatos de niño</h1>
+            </div>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de niño 1</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/niño1.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 150 €</h2>
+                </div>
+            </article>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de niño 2</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/niño2.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 150 €</h2>
+                </div>
+            </article>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de niño 3</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/niño3.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 350 €</h2>
+                </div>
+            </article>
+
+            <article class="articulo-zapato">
+                <div class="nombre-articulo-zapato">
+                    <h2>Zapato de niño 4</h2>
+                </div>
+                <div class="foto-articulo-zapato">
+                    <img src="articulos/niño4.jpg" width="100%" height="10%">
+                </div>
+                <div class="informacion-articulo-zapato">
+                    <h2>PRECIO: 450 €</h2>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- el contenedor principal derecho es el aside, que contiene 
+        enlace a las 3 categorías de articulos en el contenedor principal
+        derecho -->
+        <aside class="contenedor-principal-derecho">
+            <b>CATEGORÍAS</b>
+            <!-- se utiliza una lista desordenada para crear el menu
+            del aside.-->
+            <ul id="lista-menu-lateral">
+                <!-- cada elemento de la lista tiene un enlace <a> que 
+                te lleva al div de la categoria dentro del contenedor principal
+                derecho -->
+                <li><a href="#categoria-zapatos-hombre">ZAPATOS DE HOMBRE</a></li>
+                <li><a href="#categoria-zapatos-mujer">ZAPATOS DE MUJER</a></li>
+                <li><a href="#categoria-zapatos-niño">ZAPATOS DE NIÑOS</a></li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- el pie de pagina.-->
+    <footer class="pie-pagina">
+        <p>Wilbert López Veras, 1 DAM - Lenguaje de marcas y etiquetas. 29-10-2023</p>
+    </footer>
+    
+</body>
+</html>

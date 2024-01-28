@@ -1,0 +1,338 @@
+* {
+    /* se aplica la misma fuente para toda la pagina */
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+body {
+    /* se aplica margen 0 y padding 0 para toda la pagina */
+    margin: 0;
+    padding: 0;
+    /* la altura minima del body será la altura que permite el navegador
+    del usuario. */
+    min-height: 100vh;
+}
+
+.cabecera {
+    /* la cabecera tiene que ocupar todo el ancho de la pagina */
+    width: 100%;
+    /* se le da el alto a la cabecera */
+    height: 25vh;
+    
+    background-color:#172D13;
+}
+
+.imglogo-cabecera {
+    /* display inline block para que se dispongan de izquierda a derecha */
+    display: inline-block;
+    /* se le da padding arriba e izquierda al contenedor de la 
+    imagen del logo */
+    padding-top: 5px;
+    padding-left: 5px;
+
+    /* se cambia el ancho del contenedor de la imagen del logo y se le aplica margin */
+    width: 10%;
+    margin-top: 15px; 
+    margin-left: 15px; 
+
+
+}
+
+
+.imglogo-cabecera img {
+    margin: 10px;
+}
+
+.textologo-cabecera {
+    position: relative;
+    /* que el contenedor del texto se disponga de izquierda a derecha */
+    display: inline-block;
+    /* se establece ancho y alto del contenedor del texto del logo */
+    width: 70%;
+    height: 65%;
+    bottom: 30px;
+
+    margin-top: 0;
+    margin-left: 0;
+
+    /* que el contenedor del texto esté centrado */
+    text-align: center;
+    /* se cambia el tamaño de la fuente */
+    font-size: 30px;
+    color: #CCC
+
+}
+
+
+.barra-menu {
+    /* el contenedor nav tiene que ocupar todo el ancho igual que
+    el header. */
+    width: 100%;
+    height: 6vh;
+    background-color: #555;
+}
+
+.barra-menu ul {
+    margin: 0;
+    padding-top: 10px;
+    height: 100%;
+}
+
+.barra-menu li {
+    /* los elementos de la lista desordenada del nav tienen que
+    aparecer de izquierda a derecha, y con un espacio entre ellos 
+    por ello se le establece un padding-right*/
+    display: inline;
+    padding-right: 15px;
+}
+
+.barra-menu > ul li a {
+    color: white;
+    text-decoration: none;
+    
+}
+
+.barra-menu > ul > li {
+    height: 100%;
+    padding: 10px;
+}
+
+/* se cambia el color para cuando se pase el cursor por encima de cada 
+elemento de la lista del nav */
+.barra-menu > ul > li:hover {
+    height: 100%;
+    
+    background-color: #000;
+    text-decoration: none;
+}
+
+/* estilo al contenedor principal main */
+.contenedor-principal {
+    position: relative;
+    background-color: #CCC;
+    margin-top: 22px;
+    /* que la altura minima sea la del navegador */
+    min-height: 100vh;
+}
+
+/* el contenedor donde irá los articulos (index.html), la tabla (pag1.html)
+y el formulario (pag2.html) */
+.contenedor-principal-izq {
+    position: relative;
+    display: inline-block;
+
+    /* que ocupe el ancho necesario para que quepa el aside */
+    width: 62%;
+    height:100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 8%;
+    padding-right: 8%;
+
+    background-color: #CCC;
+    
+}
+
+
+/* se le da estilo a cada contenedor de los titulos de categorías de 
+zapatos del index.html*/
+.titulo-categoria {
+    position: relative;
+    
+
+    text-align: center;
+    font-size: 150%;
+
+}
+
+/* se le da estilo a cada contenedor de articulo */
+.articulo-zapato {
+    position: relative;
+    display: inline-block;
+    
+    background-color: white;
+    border: solid black 1px;
+
+    margin-left: 4%;
+    margin-bottom: 5%;
+    width: 43.5%;
+}
+
+/* se le da estilo al contenedor del nombre del articulo de zapato */
+.nombre-articulo-zapato {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color:#555;
+    color: white;
+    padding: 0.5%;
+}
+
+/* se le da estilo al contenedor de la foto del articulo de zapato */
+
+.foto-articulo-zapato {
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    min-height: 300px;
+    margin: 10px;
+
+}
+
+/* se le da estilo a la imagen de la foto del articulo de zapato */
+.foto-articulo-zapato img {
+    width: 100%;
+    height: 300px;
+}
+
+/* se le da estilo al contenedor del precio del articulo de zapato */
+.informacion-articulo-zapato {
+    text-align: center;
+}
+
+/* el contenedor principal derecho es el aside
+aparece a la derecha del contenedor izquierdo por el display:inline-block */
+.contenedor-principal-derecho {
+    position: absolute;
+    display: inline-block;
+
+    /* se le da el ancho que no ocupa el contenedor izquierdo de la pantalla*/
+    width: 22%;
+    height: 100%;
+
+    padding-top: 4%;
+    background-color: #56463b;
+    /* todo el contenido se alinea al centro */
+    text-align: center;
+}
+
+.contenedor-principal-derecho > b {
+    font-size: 20px;
+    color: #EEE;
+}
+
+#lista-menu-lateral {
+    position: relative;
+    width: 100%;
+    height: 6vh;
+    padding-left: 0;
+    
+}
+
+#lista-menu-lateral li {
+    position: relative;
+    /* para borrar el diseño de la izquierda de la lista */
+    list-style-type: none;
+
+    padding: 6%;
+}
+
+#lista-menu-lateral > li a {
+    color: #CCC;
+    /* para quitar el subrayado de los enlaces del menu del aside.*/
+    text-decoration: none;
+    
+}
+
+#lista-menu-lateral > li:hover {
+    /* cambiar el color de fondo cuando pasa por los elementos del menu */
+    background-color: #ae5822;  
+    
+}
+
+/* el estilo para el form de la pag2.html */
+#formulario-contacto {
+    background-color: #ddd;
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border: dotted black 1px;
+}
+
+#formulario-contacto > label {
+    font-size: 150%;
+}
+
+#formulario-contacto > input, textarea{
+    font-size: 20px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 0.5%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#formulario-contacto textarea {
+    width: 20em;
+    height: 5em;
+}
+
+/* el estilo para la tabla de pag1.html */
+#tabla-hombre {
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#tabla-hombre caption{
+    margin-bottom: 5%;
+    font-size: 150%;
+}
+
+#tabla-hombre >td, th{
+    width: 10em;
+    height: 7em;
+    text-align: center;
+}
+
+/* el estilo para las celdas cabecera de las tablas de pag1.html */
+table th {
+    background-color: #56463b;
+    color: #ccc;
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* el estilo para las celdas de las tablas de pag1.html */
+table td {
+    background-color: #555;
+    color: #ccc;
+    text-align: center;
+}
+
+
+/* el estilo para la tabla de pag1.html */
+#tabla-mujer {
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+#tabla-mujer >td, th{
+    width: 10em;
+    height: 7em;
+    text-align: center;
+}
+
+#tabla-mujer caption {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 150%;
+}
+
+
+/* el estilo para el pie de pagina */
+.pie-pagina {
+    position: relative;
+    /* que ocupe toda el ancho de la pagina */
+    width: 100%;
+    height: 10vh;
+    padding-top: 1%;
+    background-color:#172D13;
+    color: #ccc;
+    /* alinear el texto del pie de pagina al centro */
+    text-align: center;
+}
+
